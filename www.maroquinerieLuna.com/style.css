@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f8f8d9;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+ }
+.navBar{
+    height: 10vh;
+    width: 100%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.logo{
+    color: rgb(5, 5, 5);
+    font-size: 30px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    font-weight: bold;
+}
+h4{
+    text-align: center;
+    margin-top: 160px;
+    font-style: italic;
+    border-bottom: 10px solid #f3f36e;
+
+  }
+
+nav ul li a:hover{
+    color: #ea1538;
+    transition: .3s;
+}
+span{
+    color: #ea1538;
+}
+h3{
+    text-align: center;
+    
+}
+.galerie{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1000px;
+    margin: 150px auto 0;
+    
+
+}
+
+.item{
+    margin: 5px 5px;
+
+}
+.item img{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+}
+.item img:hover{
+    cursor: pointer;
+}
+
+input{
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: 100px;
+    background: #f3f3a6;
+    border: 1px solid;
+    font-size: 2rem;
+    font-weight: 200;
+    width: 240px; /* Ajustez la valeur de la largeur selon vos préférences */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input:hover{
+    background: #fbfb3c;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.0);
+    box-shadow: 1px 1px 0px 6px;
+}
+footer {
+    flex-shrink: 0;
+    border: 2px #000;
+    width: 100%;
+    background: #0b0b0b;
+    color: #f8f8f8;
+    margin-top: 225px;
+}
+.content-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    padding: 50px 0 100px;
+}
+
+.bloc {
+    flex-basis: 20%;
+    margin: 0 30px;
+    text-align: center; 
+}
+
+/* contact */
+.footer-contact h3,
+.footer-services h3,
+.footer-schedule h3,
+.footer-medias h3 {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.footer-contact p {
+    padding: 5px 0;
+}
+
+/* Services */
+
+
+.services-list,
+.schedule-list,
+.media-list {
+    list-style-type: none;
+}
+.services-list li {
+    padding: 2px 0;
+}
+.services-list a {
+    text-decoration: none;
+    color: #333;
+}
+.services-list a:hover {
+    color: rgb(3,3,3);
+}
+
+
+/* Medias */
+
+.media-list {
+    position: relative;
+    right: 10px;
+}
+.media-list svg {
+    width: 30px;
+    margin: 10px 10px;
+}
+.media-list a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .modal-image {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+
+/* Media queries */
+
+@media screen and (max-width: 1000px) {
+
+    .content-footer {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    .bloc {
+        flex-basis: auto;
+        margin: 20px 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .content-footer {
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .bloc {
+        flex-basis: 70%;
+        /* margin: 10px; */
+    }
+    .footer-contact h3,
+    .footer-services h3,
+    .footer-schedule h3,
+    .footer-medias h3 {
+        padding-bottom: 5px;
+    }
+
+}

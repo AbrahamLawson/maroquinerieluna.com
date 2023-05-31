@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+    <!-- Title of the webpage -->
+    <title>Maroquinerie Luna</title>
+</head>
+<body>
+    <!-- Main content of the webpage -->
+    <div class="navBar">
+      <nav>
+        <h2 class="logo">Maroquinerie <span>Luna</span></h2>
+        <div class="menu-icon" onclick="toggleNav()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="aPropos.html">À propos de nous</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+      <h4>Collection Ted Lapidus</h3>
+
+    <div class="galerie">
+      <div class="item">
+        <img src="img/PHOTO-2023-05-23-19-24-47 (1).jpg" alt="img galaxie" width="200" height="200" onclick="displayImage('img/PHOTO-2023-05-23-19-24-47 (1).jpg')">
+      </div>
+      <div class="item">
+        <img src="img/PHOTO-2023-05-23-19-24-47 (2).jpg" alt="img galaxie" onclick="displayImage('img/PHOTO-2023-05-23-19-24-47 (2).jpg')">
+      </div>
+      <div class="item">
+        <img src="img/PHOTO-2023-05-23-19-24-47 (3).jpg" alt="img galaxie" onclick="displayImage('img/PHOTO-2023-05-23-19-24-47 (3).jpg')">
+      </div>
+      <div class="item">
+        <img src="img/PHOTO-2023-05-23-19-24-47 (4).jpg" alt="img galaxie" onclick="displayImage('img/PHOTO-2023-05-23-19-24-47 (4).jpg')">
+      </div>
+      <div class="item">
+        <img src="img/PHOTO-2023-05-23-19-24-47 (5).jpg" alt="img galaxie" onclick="displayImage('img/PHOTO-2023-05-23-19-24-47 (5).jpg')">
+      </div>
+      <div class="item">
+        <img src="img/PHOTO-2023-05-23-19-24-48 (6).jpg" alt="img galaxie" onclick="displayImage('img/PHOTO-2023-05-23-19-24-48 (6).jpg')">
+      </div>
+      <div class="item">
+        <img src="img/PHOTO-2023-05-23-19-24-47.jpg" alt="img galaxie" onclick="displayImage('img/PHOTO-2023-05-23-19-24-47.jpg')">
+      </div>
+      <div class="item">
+        <img src="img/PHOTO-2023-05-23-19-24-48 (1).jpg" alt="img galaxie" onclick="displayImage('img/PHOTO-2023-05-23-19-24-48 (1).jpg')">
+      </div>
+      <div class="item">
+        <img src="img/PHOTO-2023-05-23-19-24-48 (2).jpg" alt="img galaxie" onclick="displayImage('img/PHOTO-2023-05-23-19-24-48 (2).jpg')">
+      </div>
+      <div class="item">
+        <img src="img/PHOTO-2023-05-23-19-24-48 (3).jpg" alt="img galaxie" onclick="displayImage('img/PHOTO-2023-05-23-19-24-48 (3).jpg')">
+      </div>
+      <div class="item">
+        <img src="img/PHOTO-2023-05-23-19-24-48 (4).jpg" alt="img galaxie" onclick="displayImage('img/PHOTO-2023-05-23-19-24-48 (4).jpg')">
+      </div>
+      <div class="item">
+        <img src="img/PHOTO-2023-05-23-19-24-48 (5).jpg" alt="img galaxie" onclick="displayImage('img/PHOTO-2023-05-23-19-24-48 (5).jpg')">
+      </div>
+      <div id="imageEnGrand">
+        <img id="imageAffiche" >
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="modal-close" onclick="closeModal()">&times;</span>
+          <img id="modalImage" class="modal-image" alt="Image en grand">
+        </div>
+      </div>
+      
+    </div>
+    <input type="submit" value="Contacter nous" onclick="window.location.href='tel:0784819198'">
+
+
+    <!-- Footer section -->
+    <footer>
+        <div class="content-footer">
+            <!-- Services list -->
+            <div class="bloc footer-services">
+                <h3>Services</h3>
+                <ul class="services-list">
+                  <li>Vente de sac en tous genre.</li>
+                  <li>En gros et au detail.</li>
+                </ul>
+            </div>
+
+            <!-- Contact information -->
+            <div class="bloc footer-contact">
+                <h3>Contact</h3>
+                <p>Phone number :</p>
+                <a href="tel:0784819198">07-84-81-91-98</a>
+                <p>Email address :</p>
+                <a href="mailto:maroquinerieluna@gmail.com">maroquinerieluna@gmail.com</a>
+            </div>
+
+            <!-- Business hours schedule -->
+            <div class="bloc footer-schedule">
+                <h3>Nos horaires</h3>
+                <ul class="schedule-list">
+                  <li>✔️ Mon 8h-20h ☎</li>
+                  <li>✔️ Tue 8h-20h ☎</li>
+                  <li>✔️ Wen 8h-20h ☎</li>
+                  <li>✔️ Thu 8h-20h ☎</li>
+                  <li>✔️ Fri 8h-20h ☎</li>
+                  <li>✔️ Sat 8h-20h ☎</li>
+                  <li>❌ Sun closed</li>
+                  <br>
+                  <li>Nous somme joignable par télephone de 8h à 20h.☎</li>
+                </ul>
+            </div>
+
+            <!-- Social media links -->
+            <div class="bloc footer-medias">
+                <h3>Nos réseaux</h3>
+                <ul class="media-list">
+                  <li>Watsapp</li>
+                    <li>
+                      <img src="img/icons8-whatsapp.svg" alt="Logo watsapp">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./page.js"></script>
+</body>
+</html>
